@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #07090D;
+    color: #F4F3EF;
+    font-family: 'Manrope', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Subtle, sophisticated scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #07090D;
+}
+::-webkit-scrollbar-thumb {
+  background: #202734;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C3547;
+}
+
+/* Signature Gradient Utilities */
+.text-signature-gradient {
+  background: linear-gradient(135deg, #6757D9 0%, #D58BAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-signature-gradient {
+  background: linear-gradient(135deg, #6757D9 0%, #D58BAA 100%);
+}
+
+.border-signature-gradient {
+  border-image: linear-gradient(135deg, #6757D9 0%, #D58BAA 100%) 1;
+}
+
+/* Atmospheric subtle glow */
+.atmospheric-glow {
+  background: radial-gradient(circle 650px at 50% 12%, rgba(103, 87, 217, 0.08), rgba(213, 139, 170, 0.04), transparent 70%);
+}
+
+.dossier-glow {
+  background: radial-gradient(circle 500px at 100% 0%, rgba(103, 87, 217, 0.05), rgba(213, 139, 170, 0.03), transparent 60%);
+}
+
+/* Subtle transitions */
+.transition-smooth {
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
